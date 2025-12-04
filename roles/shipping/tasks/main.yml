@@ -19,7 +19,7 @@
 
 
 - name: Load SQL Files
-  ansible.builtin.shell: mysql -h mysql-{{ env }}.rdevopsb87.online -uroot -pRoboShop@1 < /app/db/{{ item }}.sql
+  ansible.builtin.shell: mysql -h mysql-{{ env }}.smks.online -uroot -pRoboShop@1 < /app/db/{{ item }}.sql
   loop:
     - schema
     - app-user
